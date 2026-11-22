@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Judy Weldon — AI-ready internal communications | Spare Room Creations</title>
+<meta name="description" content="Judy Weldon helps enterprise and mid-size internal communications teams rethink how they work, then designs and builds the AI-enabled systems that get them there. Internal communications, change and enablement, human-centred design and AI.">
+<link rel="canonical" href="https://spareroomcreations.com">
+<meta property="og:title" content="Judy Weldon — AI-ready internal communications">
+<meta property="og:description" content="Internal communications, change and AI. Helping internal comms teams rethink how they work, and building the systems that get them there.">
+<meta property="og:site_name" content="Spare Room Creations">
+<meta property="og:url" content="https://spareroomcreations.com">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Judy Weldon — AI-ready internal communications">
+<meta name="twitter:description" content="Internal communications, change and AI.">
+<link rel="icon" type="image/png" href="favicon.png">
+<script>document.documentElement.className += ' js';</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+<style>
+  /* Palette: warm cream, ink navy, terracotta (clay) */
+  :root {
+    --bg: #F6F1E9; --bgrgb: 246,241,233;
+    --bg2: #EDE4D6;
+    --alt: #EFE7DA;
+    --fg: #1E2340; --ink: 30,35,64;
+    --gold: #A84B27; --goldrgb: 168,75,39; --gold-hover: #8F3E1F; --on-gold: #FFFFFF;
+    --gold-soft: rgba(168,75,39,0.1);
+    --muted: #535771; --mut: 83,87,113;
+    --dim: rgba(83,87,113,0.85);
+    --tint: 30,35,64; --cool: 30,35,64;
+    --line: rgba(30,35,64,0.1);
+    --card: rgba(255,255,255,0.7);
+    --footer: transparent;
+    --err: #B3261E;
+    --glow: none;
+    --grain: 0.025;
+    --sans: 'Inter', system-ui, sans-serif;
+    --serif: 'Playfair Display', Georgia, serif;
+    color-scheme: light;
+  }
+  /* Ink-navy band for the closing sections */
+  .band {
+    --bg: #1E2340; --bgrgb: 30,35,64; --bg2: #262B4C; --alt: #1E2340;
+    --fg: #F6F1E9; --ink: 246,241,233;
+    --gold: #E39470; --goldrgb: 227,148,112; --gold-hover: #EBA887; --on-gold: #1E2340;
+    --gold-soft: rgba(227,148,112,0.14);
+    --muted: #B9BBCB; --mut: 185,187,203; --dim: rgba(185,187,203,0.8);
+    --tint: 255,255,255;
+    --line: rgba(255,255,255,0.1);
+    --card: rgba(255,255,255,0.05);
+    --err: #F2A099;
+    color-scheme: dark;
+    background: var(--bg); color: var(--fg);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; scroll-padding-top: 72px; }
+  body { background: var(--bg); color: var(--fg); font-family: var(--sans); line-height: 1.65; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+  ::selection { background: rgba(var(--goldrgb),0.3); }
+  h1, h2, h3, h4 { font-family: var(--serif); font-weight: 700; letter-spacing: -0.01em; line-height: 1.15; text-wrap: balance; }
+  p { text-wrap: pretty; }
+  a { color: inherit; text-decoration: none; }
+  ul { list-style: none; }
+  svg.i { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex-shrink: 0; }
+  .grain { position: fixed; inset: 0; pointer-events: none; z-index: 60; opacity: var(--grain);
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+  .wrap { max-width: 1160px; margin: 0 auto; padding: 0 24px; }
+  section { padding: 104px 0; }
+  .alt { background: var(--alt); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+
+  .eyebrow { font-size: .74rem; font-weight: 500; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); }
+  .sec-head { max-width: 720px; margin-bottom: 56px; }
+  .sec-head.center { margin-left: auto; margin-right: auto; text-align: center; }
+  .sec-head h2 { font-size: clamp(2rem, 4.6vw, 3rem); margin-top: 12px; }
+  .sec-head p { color: var(--muted); margin-top: 16px; font-size: 1.05rem; }
+
+  .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 26px; border-radius: 999px; font-weight: 600; font-size: .95rem; transition: transform .15s, background .2s, border-color .2s, color .2s; }
+  .btn svg { width: 18px; height: 18px; }
+  .btn-gold { background: var(--gold); color: var(--on-gold); box-shadow: 0 10px 20px -6px rgba(var(--goldrgb),.35); }
+  .btn-gold:hover { background: var(--gold-hover); transform: translateY(-1px); }
+  .btn-ghost { border: 1px solid rgba(var(--ink),.2); color: var(--fg); }
+  .btn-ghost:hover { border-color: var(--gold); color: var(--gold); }
+
+  /* Nav */
+  nav.top { position: fixed; top: 0; left: 0; right: 0; z-index: 40; transition: background .3s, border-color .3s; border-bottom: 1px solid transparent; }
+  nav.top.scrolled { background: rgba(var(--bgrgb),.86); backdrop-filter: blur(12px); border-color: var(--line); }
+  nav.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+  .brand { font-family: var(--serif); font-size: 1.2rem; font-weight: 700; }
+  .brand span { color: var(--gold); }
+  .menu { display: flex; gap: 28px; font-size: .9rem; color: var(--muted); align-items: center; }
+  .menu a:hover { color: var(--fg); }
+  .menu .cta { color: var(--on-gold); background: var(--gold); padding: 8px 18px; border-radius: 999px; font-weight: 600; }
+  .menu .cta:hover { color: var(--on-gold); background: var(--gold-hover); }
+  .burger { display: none; background: none; border: 0; color: var(--fg); width: 40px; height: 40px; cursor: pointer; }
+  .burger svg { width: 24px; height: 24px; }
+
+  /* Hero */
+  .hero { position: relative; min-height: 100vh; min-height: 100svh; display: flex; align-items: center; padding: 120px 0 96px;
+    background: radial-gradient(ellipse at 70% 40%, rgba(var(--goldrgb),0.10), transparent 55%), radial-gradient(ellipse at 10% 90%, rgba(var(--cool),0.06), transparent 50%); }
+  .hero h1 { font-size: clamp(3.4rem, 10vw, 7rem); margin: 20px 0 28px; text-shadow: var(--glow); animation: rise 1s ease-out both; }
+  .hero h1 em { font-style: italic; font-weight: 300; color: rgba(var(--ink),.8); }
+  .hero .eyebrow { animation: fade 1s .1s both; }
+  .hero .lede { font-size: clamp(1.2rem, 2.4vw, 1.55rem); font-weight: 300; max-width: 760px; color: var(--fg); animation: rise .9s .3s ease-out both; }
+  .hero .lede strong { font-weight: 500; color: var(--gold); }
+  .hero .sub { margin-top: 20px; max-width: 680px; color: var(--muted); animation: rise .9s .45s ease-out both; }
+  .hero .actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 40px; animation: rise .9s .6s ease-out both; }
+  .hero .studio { margin-top: 56px; font-size: .85rem; color: var(--dim); animation: fade 1s 1s both; }
+  .hero .studio b { color: var(--fg); font-weight: 500; }
+
+  /* Pillars */
+  .pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 24px; }
+  .pillar { padding: 32px; border-radius: 20px; background: var(--card); border: 1px solid var(--line); }
+  .pillar .ic { width: 52px; height: 52px; border-radius: 14px; display: grid; place-items: center; background: var(--gold-soft); color: var(--gold); margin-bottom: 22px; }
+  .pillar .ic svg { width: 26px; height: 26px; }
+  .pillar h3 { font-size: 1.35rem; margin-bottom: 10px; }
+  .pillar p { color: var(--muted); font-size: .95rem; }
+
+  /* Process strip */
+  .process { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin-bottom: 56px; border: 1px solid var(--line); border-radius: 20px; overflow: hidden; }
+  .process div { padding: 22px 24px; border-right: 1px solid var(--line); }
+  .process div:last-child { border-right: 0; }
+  .process b { display: block; font-family: var(--serif); font-size: 1.15rem; margin-bottom: 4px; }
+  .process b span { color: var(--gold); font-family: var(--sans); font-size: .78rem; font-weight: 600; letter-spacing: .1em; margin-right: 8px; }
+  .process p { font-size: .85rem; color: var(--muted); }
+
+  /* Services */
+  .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 24px; }
+  .svc { display: flex; flex-direction: column; padding: 32px; border-radius: 22px; background: var(--card); border: 1px solid var(--line); transition: transform .4s, border-color .4s, box-shadow .4s, opacity .6s; }
+  .svc:hover { transform: translateY(-6px); border-color: rgba(var(--goldrgb),.25); box-shadow: 0 24px 40px -20px rgba(var(--goldrgb),.15); }
+  .svc .tag { align-self: flex-start; font-size: .7rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--gold); border: 1px solid rgba(var(--goldrgb),.25); background: rgba(var(--goldrgb),.06); padding: 4px 12px; border-radius: 999px; margin-bottom: 22px; }
+  .svc h3 { font-size: 1.45rem; margin-bottom: 10px; }
+  .svc > p { color: var(--muted); font-size: .95rem; margin-bottom: 20px; }
+  .svc ul { display: grid; gap: 10px; margin-bottom: 28px; }
+  .svc li { display: flex; gap: 10px; font-size: .9rem; color: rgba(var(--ink),.85); }
+  .svc li svg { width: 16px; height: 16px; color: var(--gold); margin-top: 4px; }
+  .svc .talk { margin-top: auto; padding-top: 22px; border-top: 1px solid var(--line); display: inline-flex; align-items: center; gap: 8px; font-weight: 500; font-size: .92rem; }
+  .svc .talk:hover { color: var(--gold); }
+  .svc .talk svg { width: 16px; height: 16px; transition: transform .25s; }
+  .svc .talk:hover svg { transform: translateX(3px); }
+
+  /* Results */
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: 22px; overflow: hidden; }
+  .stat { background: var(--bg); padding: 32px 28px; }
+  .stat b { display: block; font-family: var(--serif); font-size: clamp(2.2rem, 4vw, 2.8rem); color: var(--gold); line-height: 1; margin-bottom: 12px; }
+  .stat p { font-size: .88rem; color: var(--muted); }
+  .clients { margin-top: 64px; text-align: center; }
+  .clients .eyebrow { color: var(--dim); }
+  .clients ul { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px 44px; margin-top: 22px; }
+  .clients li { font-family: var(--serif); font-size: clamp(1.25rem, 2.6vw, 1.7rem); color: rgba(var(--ink),.7); }
+
+  /* Work */
+  .cases { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 24px; }
+  .case { padding: 32px; border-radius: 22px; background: linear-gradient(160deg, rgba(var(--goldrgb),.06), transparent 60%), var(--card); border: 1px solid var(--line); }
+  .case .who { font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; color: var(--dim); margin-bottom: 14px; }
+  .case h3 { font-size: 1.3rem; margin-bottom: 12px; }
+  .case p { color: var(--muted); font-size: .93rem; }
+  .case .out { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--line); font-size: .88rem; color: var(--fg); }
+  .case .out b { color: var(--gold); font-weight: 600; }
+
+  /* Studio / apps */
+  .apps { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 20px; }
+  .app { padding: 26px; border-radius: 20px; background: var(--card); border: 1px solid var(--line); display: flex; flex-direction: column; }
+  .app .row1 { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; gap: 10px; }
+  .app .ic { width: 46px; height: 46px; border-radius: 12px; display: grid; place-items: center; background: linear-gradient(135deg, rgba(var(--tint),.1), transparent); border: 1px solid var(--line); color: var(--gold); }
+  .app .ic svg { width: 22px; height: 22px; }
+  .app .cat { font-size: .66rem; letter-spacing: .14em; text-transform: uppercase; color: var(--dim); text-align: right; }
+  .app h3 { font-size: 1.15rem; margin-bottom: 8px; }
+  .app p { font-size: .86rem; color: var(--muted); margin-bottom: 18px; }
+  .app a, .app .soon { margin-top: auto; font-size: .85rem; font-weight: 500; display: inline-flex; align-items: center; gap: 6px; }
+  .app a:hover { color: var(--gold); }
+  .app a svg, .app .soon svg { width: 14px; height: 14px; }
+  .app .soon { color: var(--dim); }
+
+  /* Toolkit */
+  .tk { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 40px; }
+  .tk h3 { font-size: 1.2rem; margin-bottom: 16px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chips span { font-size: .82rem; padding: 6px 13px; border-radius: 999px; border: 1px solid var(--line); background: rgba(var(--tint),.03); color: rgba(var(--ink),.85); }
+  .chips span.hl { border-color: rgba(var(--goldrgb),.3); background: rgba(var(--goldrgb),.07); color: var(--gold); }
+  .creds li { padding: 10px 0; border-bottom: 1px solid var(--line); font-size: .92rem; color: rgba(var(--ink),.88); }
+  .creds li small { display: block; color: var(--dim); font-size: .8rem; }
+
+  /* About */
+  .about { display: grid; grid-template-columns: minmax(0, 360px) minmax(0, 1fr); gap: 64px; align-items: center; }
+  .portrait { position: relative; aspect-ratio: 4/5; border-radius: 24px; overflow: hidden; border: 1px solid var(--line); background: radial-gradient(circle at 50% 35%, rgba(var(--goldrgb),.18), transparent 60%), var(--bg2); display: grid; place-items: center; }
+  .portrait img { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
+  .portrait .initials { font-family: var(--serif); font-size: 5rem; color: rgba(var(--goldrgb),.55); font-style: italic; }
+  .about h2 { font-size: clamp(2rem, 4.4vw, 2.8rem); margin: 12px 0 22px; }
+  .about p { color: var(--muted); margin-bottom: 16px; font-size: 1.02rem; }
+  .about p strong { color: var(--fg); font-weight: 500; }
+  .about .links { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 28px; }
+
+  /* Contact */
+  .contact { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: 56px; align-items: start; }
+  .contact h2 { font-size: clamp(2.2rem, 5vw, 3.2rem); margin: 12px 0 18px; }
+  .contact .intro p { color: var(--muted); margin-bottom: 26px; }
+  .direct { display: grid; gap: 12px; }
+  .direct a { display: inline-flex; align-items: center; gap: 10px; color: rgba(var(--ink),.88); overflow-wrap: anywhere; }
+  .direct a:hover { color: var(--gold); }
+  .direct svg { width: 18px; height: 18px; color: var(--gold); }
+  form.card { background: var(--card); border: 1px solid var(--line); border-radius: 24px; padding: clamp(24px, 5vw, 40px); }
+  .row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0 20px; }
+  .field { display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px; }
+  .field label { font-size: .84rem; font-weight: 500; color: rgba(var(--ink),.8); margin-left: 2px; }
+  .field input, .field textarea, .field select { width: 100%; background: rgba(var(--tint),.05); border: 1px solid rgba(var(--tint),.1); border-radius: 12px; padding: 12px 14px; color: var(--fg); font: inherit; font-size: 1rem; resize: none; transition: border-color .2s, box-shadow .2s; }
+  .field select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23A84B27' stroke-width='2'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 12px center; background-size: 18px; padding-right: 40px; }
+  .field select option { background: var(--bg2); color: var(--fg); }
+  .field input::placeholder, .field textarea::placeholder { color: rgba(var(--mut),.5); }
+  .field input:focus, .field textarea:focus, .field select:focus { outline: none; border-color: rgba(var(--goldrgb),.55); box-shadow: 0 0 0 1px rgba(var(--goldrgb),.55); }
+  .err { font-size: .78rem; color: var(--err); display: none; margin-left: 2px; }
+  .field.bad .err { display: block; }
+  .send { width: 100%; justify-content: center; border: 0; cursor: pointer; font: inherit; font-weight: 600; }
+  .note { text-align: center; font-size: .8rem; color: var(--muted); margin-top: 14px; min-height: 1.2em; }
+
+  footer { border-top: 1px solid var(--line); background: var(--footer); padding: 56px 24px; text-align: center; }
+  footer h4 { font-size: 1.4rem; margin-bottom: 10px; }
+  footer .sub { font-size: .9rem; color: var(--muted); }
+  footer .flinks { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px 26px; margin-top: 26px; font-size: .88rem; color: var(--dim); }
+  footer .flinks a { display: inline-flex; align-items: center; gap: 6px; }
+  footer .flinks a:hover { color: var(--gold); }
+  footer .flinks svg { width: 16px; height: 16px; }
+  footer .copy { margin-top: 30px; font-size: .75rem; color: rgba(var(--mut),.4); }
+
+  .js .reveal { opacity: 0; transform: translateY(20px); }
+  .js .reveal.in { opacity: 1; transform: none; transition: opacity .6s ease-out, transform .6s ease-out; }
+  @keyframes rise { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+  @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; }
+    .js .reveal { opacity: 1; transform: none; }
+  }
+
+  @media (max-width: 860px) {
+    .menu { position: fixed; top: 68px; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0; background: rgba(var(--bgrgb),.97); border-bottom: 1px solid var(--line); padding: 8px 24px 20px; display: none; }
+    .menu.open { display: flex; }
+    .menu a { padding: 14px 0; border-bottom: 1px solid var(--line); }
+    .menu .cta { margin-top: 14px; text-align: center; border: 0; }
+    .burger { display: grid; place-items: center; }
+    nav.top.open-bg { background: rgba(var(--bgrgb),.97); }
+    .process { grid-template-columns: 1fr 1fr; }
+    .process div:nth-child(2) { border-right: 0; }
+    .process div:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+    .about, .contact { grid-template-columns: 1fr; gap: 40px; }
+    .stats { grid-template-columns: 1fr 1fr; }
+    .portrait { max-width: 320px; }
+  }
+  @media (max-width: 520px) {
+    section { padding: 80px 0; }
+    .process { grid-template-columns: 1fr; }
+    .stats { grid-template-columns: 1fr; }
+    .process div { border-right: 0; border-bottom: 1px solid var(--line); }
+    .process div:last-child { border-bottom: 0; }
+    .hero .actions .btn { flex: 1 1 100%; justify-content: center; }
+  }
+</style>
+</head>
+<body>
+<div class="grain"></div>
+
+<nav class="top" id="nav">
+  <div class="wrap">
+    <a class="brand" href="#top">Judy Weldon<span>.</span></a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+      <svg class="i" viewBox="0 0 24 24"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>
+    </button>
+    <div class="menu" id="menu">
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#studio">Studio</a>
+      <a href="#about">About</a>
+      <a class="cta" href="#contact">Let's talk</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <p class="eyebrow">Internal Communications · Change &amp; Enablement · AI</p>
+    <h1>Judy <em>Weldon</em></h1>
+    <p class="lede">I help internal communications teams <strong>rethink how they work</strong>, then design and build the AI-enabled systems that get them there.</p>
+    <p class="sub">Fifteen years of helping employees understand, adopt and act on change, through clear strategy, compelling communications and tools people actually use. For enterprise teams at Salesforce, Telstra and Microsoft, and for growing mid-size businesses.</p>
+    <div class="actions">
+      <a class="btn btn-gold" href="#contact">Let's talk <svg class="i" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+      <a class="btn btn-ghost" href="#services">Explore services</a>
+    </div>
+    <p class="studio">Working through <b>Spare Room Creations</b>, my independent studio.</p>
+  </div>
+</header>
+
+<main>
+  <!-- What I do -->
+  <section id="what">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">What I do</p>
+        <h2>Strategy, design and delivery, all in one place.</h2>
+        <p>Internal comms teams can see AI changing their work. Fewer know what the function should look like next, or how to get there while still bringing employees along. That's where I come in.</p>
+      </div>
+      <div class="pillars">
+        <div class="pillar reveal">
+          <div class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/><path d="M8 12h.01"/><path d="M12 12h.01"/><path d="M16 12h.01"/></svg></div>
+          <h3>Internal &amp; Executive Communications</h3>
+          <p>Leadership messages, employee campaigns and storytelling that make complex change make sense to the people living through it.</p>
+        </div>
+        <div class="pillar reveal">
+          <div class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+          <h3>Human-Centred Design &amp; Change</h3>
+          <p>Discovery, journey mapping and design thinking to understand how a function really works today, then shape a future vision people believe in.</p>
+        </div>
+        <div class="pillar reveal">
+          <div class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M12 3l1.9 5.8L20 10l-5 3.9L16.5 20 12 16.6 7.5 20 9 13.9 4 10l6.1-1.2Z"/></svg></div>
+          <h3>AI Enablement &amp; Building</h3>
+          <p>Designing and building the AI workflows, automations and tools that turn the vision into how work actually gets done, from Claude and Slack to SharePoint and Power Automate.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="alt">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Services</p>
+        <h2>Ways we can work together</h2>
+        <p>Built for internal comms, change and people teams. Start at any step: many clients begin with a review and carry on through to build and adoption, while others just need an extra senior pair of hands.</p>
+      </div>
+
+      <div class="process reveal">
+        <div><b><span>01</span>Discover</b><p>Understand how the function works today</p></div>
+        <div><b><span>02</span>Design</b><p>Shape the AI-enabled future state</p></div>
+        <div><b><span>03</span>Build</b><p>Create the tools and workflows</p></div>
+        <div><b><span>04</span>Embed</b><p>Make the change stick</p></div>
+      </div>
+
+      <div class="services">
+        <article class="svc reveal">
+          <span class="tag">01 · Discover</span>
+          <h3>Comms Function Review</h3>
+          <p>A human-centred look at how your internal comms function really works, for your team and your employees, and where AI can make the biggest difference.</p>
+          <ul>
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Stakeholder and team interviews</li>
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Channel, content and workflow audit</li>
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Pain points and AI opportunity map</li>
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>A clear, honest diagnosis to act on</li>
+          </ul>
+          <a class="talk" href="#contact" data-service="Comms Function Review">Let's talk <svg class="i" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        </article>
+
+        <article class="svc reveal">
+          <span class="tag">02 · Design</span>
+          <h3>Future-State Blueprint</h3>
+          <p>A strategic vision of how your function will run with AI, plus the practical plan to get there.</p>
+          <ul>
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Future operating model and team roles</li>
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Redesigned workflows and processes</li>
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>AI governance and guardrails</li>
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Phased roadmap leaders can back</li>
+          </ul>
+          <a class="talk" href="#contact" data-service="Future-State Blueprint">Let's talk <svg class="i" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        </article>
+
+        <article class="svc reveal">
+          <span class="tag">03 · Build</span>
+          <h3>AI Workflow Build</h3>
+          <p>Hands-on design and build of the tools that make the vision real, using the platforms your team already has.</p>
+          <ul>
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>AI intelligence and insight engines</li>
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Content workflows and approvals</li>
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>SharePoint, Lists and Power Automate solutions</li>
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Prototypes that prove value fast</li>
+          </ul>
+          <a class="talk" href="#contact" data-service="AI Workflow Build">Let's talk <svg class="i" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        </article>
+
+        <article class="svc reveal">
+          <span class="tag">04 · Embed</span>
+          <h3>Adoption &amp; Enablement</h3>
+          <p>New tools only matter if people use them. I make sure the change lands.</p>
+          <ul>
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Change communications and campaigns</li>
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Playbooks and self-service resources</li>
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Hands-on AI training and workshops</li>
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Handover so your team owns it</li>
+          </ul>
+          <a class="talk" href="#contact" data-service="Adoption & Enablement">Let's talk <svg class="i" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        </article>
+
+        <article class="svc reveal">
+          <span class="tag">Ongoing</span>
+          <h3>Internal Communications Services</h3>
+          <p>Expert internal comms delivered for you, project by project or as an ongoing service.</p>
+          <ul>
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Internal comms strategy and planning</li>
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Leadership and all-staff communications</li>
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Intranet and SharePoint content</li>
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Newsletters, campaigns, video and design</li>
+          </ul>
+          <a class="talk" href="#contact" data-service="Internal Communications Services">Let's talk <svg class="i" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        </article>
+
+        <article class="svc reveal">
+          <span class="tag">Flexible</span>
+          <h3>Interim &amp; Fractional Comms</h3>
+          <p>A senior communications lead embedded in your team, without the full-time hire.</p>
+          <ul>
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Parental leave and gap cover</li>
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Peak periods and major programs</li>
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Part-time or fixed-term arrangements</li>
+            <li><svg class="i" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></svg>Up to speed fast, autonomous from day one</li>
+          </ul>
+          <a class="talk" href="#contact" data-service="Interim & Fractional Comms">Let's talk <svg class="i" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results -->
+  <section id="results">
+    <div class="wrap">
+      <div class="sec-head center reveal">
+        <p class="eyebrow">Results</p>
+        <h2>Outcomes, not just outputs</h2>
+      </div>
+      <div class="stats reveal">
+        <div class="stat"><b>$30M</b><p>in qualified pipeline generated through AI value discovery programs</p></div>
+        <div class="stat"><b>1,500+</b><p>customer signals captured across 14 industries by an AI intelligence engine I architected</p></div>
+        <div class="stat"><b>20+</b><p>new strategic themes surfaced in the engine's first week</p></div>
+        <div class="stat"><b>$41M</b><p>target supported across 100 priority accounts through cross-functional AI enablement</p></div>
+        <div class="stat"><b>~$1M</b><p>customer advocacy program built and scaled</p></div>
+        <div class="stat"><b>Top 100</b><p>APAC accounts strengthened through scalable, ROI-led value storytelling</p></div>
+      </div>
+      <div class="clients reveal">
+        <p class="eyebrow">Experience with</p>
+        <ul>
+          <li>Salesforce</li>
+          <li>Telstra</li>
+          <li>Microsoft</li>
+          <li>Centrepoint Alliance</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work" class="alt">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Selected work</p>
+        <h2>From the inside out</h2>
+        <p>A few examples of the problems I've helped solve.</p>
+      </div>
+      <div class="cases">
+        <article class="case reveal">
+          <p class="who">ASX-listed property group · Current</p>
+          <h3>Reimagining internal comms for the AI era</h3>
+          <p>Reviewing an internal communications function through a human-centred design lens, then shaping a strategic vision of how it will work with AI, and designing the systems and processes to get there.</p>
+          <p class="out"><b>Focus:</b> function review · future-state vision · AI-driven workflows</p>
+        </article>
+        <article class="case reveal">
+          <p class="who">Salesforce</p>
+          <h3>An AI customer intelligence engine</h3>
+          <p>Architected and directed the build of an AI engine using Claude Code and Slack that ingests meeting transcripts and briefing notes, automates theme detection and turns raw conversations into executive insight.</p>
+          <p class="out"><b>Result:</b> 20+ themes in week one · 1,500+ signals across 14 industries</p>
+        </article>
+        <article class="case reveal">
+          <p class="who">Salesforce</p>
+          <h3>AI value discovery &amp; enablement</h3>
+          <p>Designed value discovery workshops and a six-step enablement program connecting AI capabilities to measurable business outcomes, then built internal capability so new teams could own it.</p>
+          <p class="out"><b>Result:</b> $30M qualified pipeline · scaled beyond ANZ</p>
+        </article>
+        <article class="case reveal">
+          <p class="who">Microsoft</p>
+          <h3>Designing a better event experience</h3>
+          <p>Led content strategy for a flagship customer event, embedding design-thinking principles to improve the attendee experience end to end.</p>
+          <p class="out"><b>Focus:</b> content strategy · design thinking · customer experience</p>
+        </article>
+        <article class="case reveal">
+          <p class="who">Telstra</p>
+          <h3>Customer advocacy &amp; storytelling</h3>
+          <p>Built an annual customer advocacy program turning measurable customer outcomes into compelling executive stories, alongside major thought-leadership and event programs.</p>
+          <p class="out"><b>Result:</b> ~$1M annual program · 4 reports and 20 industry insights</p>
+        </article>
+        <article class="case reveal">
+          <p class="who">Centrepoint Alliance</p>
+          <h3>Accelerating partner enablement</h3>
+          <p>Developed a dealer extranet and value-led thought-leadership content to help partners find what they needed and sell with confidence.</p>
+          <p class="out"><b>Focus:</b> partner enablement · digital · content</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Studio -->
+  <section id="studio">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Spare Room Creations</p>
+        <h2>Built in the spare room</h2>
+        <p>I don't just recommend tools, I build them. These are apps I've designed and built myself, each one solving a real problem in everyday life. They're also my testing ground for the AI and design approaches I bring to client work.</p>
+      </div>
+      <div class="apps">
+        <article class="app reveal">
+          <div class="row1"><div class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M20.38 3.46 16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg></div><span class="cat">Built with Claude</span></div>
+          <h3>Office Capsule Wardrobe</h3>
+          <p>A weekly planner for office days: 54 looks from a 59-piece capsule wardrobe, matched to the forecast and planned so no piece repeats in a week.</p>
+          <a href="https://claude.ai/artifact/QajhkLVdfTbQDecSkVXTdh" target="_blank" rel="noopener noreferrer">Visit app <svg class="i" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
+        </article>
+        <article class="app reveal">
+          <div class="row1"><div class="ic"><svg class="i" viewBox="0 0 24 24"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg></div><span class="cat">AI · Crafting</span></div>
+          <h3>Pattern Portfolio</h3>
+          <p>Paste a link, upload a PDF or pull from Google Drive. AI strips away the clutter and turns any craft pattern into tidy, step-by-step instructions.</p>
+          <a href="https://patternportfolio.replit.app/" target="_blank" rel="noopener noreferrer">Visit app <svg class="i" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
+        </article>
+        <article class="app reveal">
+          <div class="row1"><div class="ic"><svg class="i" viewBox="0 0 24 24"><rect width="20" height="15" x="2" y="7" rx="2"/><polyline points="17 2 12 7 7 2"/></svg></div><span class="cat">Entertainment</span></div>
+          <h3>Media Journal</h3>
+          <p>A personal watch journal for TV, movies and podcasts that flags new seasons, nudges you to update progress and keeps your queue in order.</p>
+          <a href="https://media-tracker-journal.replit.app/" target="_blank" rel="noopener noreferrer">Visit app <svg class="i" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
+        </article>
+        <article class="app reveal">
+          <div class="row1"><div class="ic"><svg class="i" viewBox="0 0 24 24"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M8 7v7"/><path d="M12 7v4"/><path d="M16 7v9"/></svg></div><span class="cat">Productivity</span></div>
+          <h3>MindSpace</h3>
+          <p>One calm space for everything on your mind: tasks, ideas, gifts and reminders on a kanban board that syncs across devices and can be shared.</p>
+          <a href="https://mindspace-app.replit.app/" target="_blank" rel="noopener noreferrer">Visit app <svg class="i" viewBox="0 0 24 24"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/></svg></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Toolkit -->
+  <section id="toolkit" class="alt">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="eyebrow">Toolkit &amp; credentials</p>
+        <h2>The tools behind the work</h2>
+      </div>
+      <div class="tk">
+        <div class="reveal">
+          <h3>Expertise</h3>
+          <div class="chips">
+            <span class="hl">Strategic Communications</span><span class="hl">Internal Communications</span><span class="hl">Human-Centred Design</span><span class="hl">AI Strategy &amp; Innovation</span>
+            <span>Executive Communications</span><span>Change &amp; Enablement</span><span>Program Management</span><span>Stakeholder Management</span><span>Value Realisation</span><span>Data-Driven Decisions</span>
+          </div>
+          <h3 style="margin-top:32px">Platforms</h3>
+          <div class="chips">
+            <span class="hl">SharePoint</span><span class="hl">Power Automate</span><span class="hl">Microsoft Lists</span><span class="hl">Microsoft 365</span>
+            <span>Claude Code</span><span>Slack &amp; Slack Agents</span><span>Salesforce &amp; Agentforce</span><span>Cursor</span><span>Replit</span><span>Visual Studio</span><span>NotebookLM</span><span>Highspot</span><span>Figma</span><span>Canva</span><span>Adobe Creative Suite</span><span>Google Workspace</span><span>CMS platforms</span><span>Filmora</span><span>Audacity</span>
+          </div>
+        </div>
+        <div class="reveal">
+          <h3>Education</h3>
+          <ul class="creds">
+            <li>Graduate Certificate, Creative Intelligence &amp; Strategic Innovation<small>University of Technology Sydney</small></li>
+            <li>Master of Business Administration<small>University of Newcastle</small></li>
+            <li>Master of Marketing<small>University of Newcastle</small></li>
+            <li>Bachelor of Arts<small>University of New England</small></li>
+          </ul>
+          <h3 style="margin-top:32px">Certifications</h3>
+          <ul class="creds">
+            <li>Salesforce Certified Agentforce Specialist, AI Associate, Platform Strategy Designer &amp; Platform UX Designer</li>
+            <li>AI Fluency<small>University of Sydney</small></li>
+            <li>Copywriting &amp; SEO Copywriting<small>Australian Writers' Centre</small></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="wrap about">
+      <div class="portrait reveal">
+        <!-- Save your photo as judy.jpg next to this file and it will appear here -->
+        <img src="judy.jpg" alt="Judy Weldon" onerror="this.remove()">
+        <span class="initials" aria-hidden="true">JW</span>
+      </div>
+      <div class="reveal">
+        <p class="eyebrow">About</p>
+        <h2>Hi, I'm Judy.</h2>
+        <p>Turning complex business challenges into clear strategies, practical programs and communications that help people take action has been at the heart of my career.</p>
+        <p>My path has run from <strong>internal communications and marketing at Telstra</strong>, through <strong>my own consultancy</strong>, to <strong>leading AI enablement and strategic communications at Salesforce</strong> across ANZ and APAC. Along the way I've brought together Sales, Customer Success, Marketing, Pre-Sales and Partners, helping teams find and quantify AI opportunities and turn large volumes of customer intelligence into insight leaders can act on.</p>
+        <p>I work where strategy, people and technology meet. Whether it's introducing new AI capabilities, helping a team through change or rethinking how an internal comms function works, I start by understanding the real business problem, then design a practical way forward.</p>
+        <p>At my core, I'm a problem solver. I like taking something complex or undefined, working out what's really needed, and creating the structure, tools and momentum that help people make better decisions.</p>
+        <p><strong>Spare Room Creations</strong> is where that instinct goes after hours: a spare room where I build the tools I wish existed. It's my testing ground for new ideas, and it's why my advice is grounded in things I've actually built.</p>
+        <div class="links">
+          <a class="btn btn-gold" href="#contact">Let's talk</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/judyweldon" target="_blank" rel="noopener noreferrer"><svg class="i" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="band">
+    <div class="wrap contact">
+      <div class="intro reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's talk.</h2>
+        <p>Whether you're starting to think about AI in your internal comms function, need a senior pair of hands, or just want to explore an idea, I'd love to hear from you.</p>
+        <div class="direct">
+          <a href="mailto:spareroomhq@gmail.com"><svg class="i" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>spareroomhq@gmail.com</a>
+          <a href="https://www.linkedin.com/in/judyweldon" target="_blank" rel="noopener noreferrer"><svg class="i" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>linkedin.com/in/judyweldon</a>
+        </div>
+      </div>
+      <form class="card reveal" id="contact-form" novalidate>
+        <div class="row">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" autocomplete="name" placeholder="Your name">
+            <span class="err">Please tell me your name.</span>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" placeholder="you@company.com">
+            <span class="err">Please enter a valid email.</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="field">
+            <label for="company">Organisation <span style="color:var(--dim);font-weight:400">(optional)</span></label>
+            <input id="company" name="company" autocomplete="organization" placeholder="Where you work">
+          </div>
+          <div class="field">
+            <label for="service">I'm interested in</label>
+            <select id="service" name="service">
+              <option>Not sure yet</option>
+              <option>Comms Function Review</option>
+              <option>Future-State Blueprint</option>
+              <option>AI Workflow Build</option>
+              <option>Adoption &amp; Enablement</option>
+              <option>Internal Communications Services</option>
+              <option>Interim &amp; Fractional Comms</option>
+            </select>
+          </div>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell me a little about what you're working on"></textarea>
+          <span class="err">Please write a message.</span>
+        </div>
+        <button class="btn btn-gold send" type="submit">
+          <svg class="i" viewBox="0 0 24 24"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z"/><path d="m21.854 2.147-10.94 10.939"/></svg>
+          Send message
+        </button>
+        <p class="note" id="form-note"></p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="band">
+  <h4>Built by a human, not a corporation.</h4>
+  <p class="sub">One room. One person. Work that works.</p>
+  <div class="flinks">
+    <a href="mailto:spareroomhq@gmail.com"><svg class="i" viewBox="0 0 24 24"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>Email</a>
+    <a href="https://www.linkedin.com/in/judyweldon" target="_blank" rel="noopener noreferrer"><svg class="i" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>LinkedIn</a>
+    <a href="https://instagram.com/spareroom.creations" target="_blank" rel="noopener noreferrer"><svg class="i" viewBox="0 0 24 24"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>Instagram</a>
+  </div>
+  <p class="copy">&copy; <span id="yr">2026</span> Judy Weldon · Spare Room Creations</p>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Nav: background on scroll, mobile menu
+  (function () {
+    var nav = document.getElementById('nav'), menu = document.getElementById('menu'), burger = document.getElementById('burger');
+    function onScroll() { nav.classList.toggle('scrolled', window.scrollY > 20); }
+    window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
+    burger.addEventListener('click', function () {
+      var open = menu.classList.toggle('open');
+      nav.classList.toggle('open-bg', open);
+      burger.setAttribute('aria-expanded', open);
+    });
+    menu.addEventListener('click', function (e) { if (e.target.tagName === 'A') { menu.classList.remove('open'); nav.classList.remove('open-bg'); burger.setAttribute('aria-expanded', false); } });
+  })();
+
+  // Fade sections in as they scroll into view
+  (function () {
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } });
+    }, { threshold: 0.1 });
+    els.forEach(function (e) { io.observe(e); });
+  })();
+
+  // "Let's talk" on a service card pre-selects that service in the form
+  document.querySelectorAll('[data-service]').forEach(function (a) {
+    a.addEventListener('click', function () { document.getElementById('service').value = a.getAttribute('data-service'); });
+  });
+
+  // Contact form: no server needed, opens the visitor's email app with the message filled in
+  (function () {
+    var TO = 'spareroomhq@gmail.com';
+    var form = document.getElementById('contact-form'), note = document.getElementById('form-note');
+    form.addEventListener('submit', function (ev) {
+      ev.preventDefault();
+      var name = form.name.value.trim(), email = form.email.value.trim(), msg = form.message.value.trim();
+      var company = form.company.value.trim(), service = form.service.value;
+      var checks = [[form.name, !!name], [form.email, /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)], [form.message, !!msg]];
+      var ok = true;
+      checks.forEach(function (c) { c[0].parentNode.classList.toggle('bad', !c[1]); if (!c[1]) ok = false; });
+      if (!ok) return;
+      var subject = 'Enquiry: ' + service + ' (' + name + ')';
+      var body = msg + '\n\n— ' + name + (company ? ', ' + company : '') + '\n' + email;
+      window.location.href = 'mailto:' + TO + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+      note.textContent = 'Your email app should open with your message ready to send.';
+    });
+  })();
+</script>
+</body>
+</html>
